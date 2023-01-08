@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slug Manager</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="container__input_field">
+        <select name="issue_type" id="issue_type">
+          <option value="">Issue Type</option>
+          <option value="features">Features</option>
+          <option value="bugs">Bugs</option>
+          <option value="testing">Testing</option>
+          <option value="upgrade">Upgrade</option>
+          <option value="backlogs">Backlogs</option>
+        </select>
+        <input type="text" id="org_text" placeholder="Original Text"/>
+        <input type="text" id="mod_text" placeholder="Modified Text"/>
+      </div>
+      <div class="container__input_button">
+        <button class="btn btn--primary" value="Convert" id="btn_convert">Convert</button>
+        <button class="btn btn--secondary" value="Clear" id="btn_clear">Clear</button>
+        <button class="btn btn--copy" value="Copy" id="btn_copy">Copy</button>
+      </div>
+
+      <div class="container__alert_message"></div>
+
+    </div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/scripts.js"></script>
+
+
+  </body>
+</html>
